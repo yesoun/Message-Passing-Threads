@@ -13,7 +13,7 @@ by the receiving thread and printed. The sending and receiving processes should 
 to provide the necessary synchronization to avoid any race conditions.
 
 Files:
-     makefile: gcc hmwrk_1_main.c -o main_hmwrk_1 -lpthread
+     makefile: gcc main.c -o main -lpthread
      hmwrk_1_main.c     
 */
 #include <pthread.h>
@@ -70,7 +70,7 @@ void *receive_message(void* a)
 
 
 /**
-    Compilation : gcc hmwrk_1_main.c -o main_hmwrk_1 -lpthread
+    Compilation : gcc main.c -o main -lpthread
     Main section
 */
 int main()
